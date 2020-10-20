@@ -14,8 +14,8 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class Base implements SauceOnDemandSessionIdProvider {
-    private final static String USER_NAME = Utils.readPropertyOrEnv("SAUCE_USERNAME", "");
-    private final static String ACCESS_KEY = Utils.readPropertyOrEnv("SAUCE_ACCESS_KEY", "");
+    private final static String USER_NAME = Utils.readPropertyOrEnv("SAUCE_USERNAME", "tjozsa");
+    private final static String ACCESS_KEY = Utils.readPropertyOrEnv("SAUCE_ACCESS_KEY", "779d7d3a-cf5a-40a8-9031-8b2dd8cb1c55");
     private static final String SELENIUM_URI = "@ondemand.saucelabs.com:443/wd/hub";
     private static final long SAUCELABS_ID = System.currentTimeMillis() % 100000;
 
